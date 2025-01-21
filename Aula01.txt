@@ -1,0 +1,11 @@
+public class MyClass {
+  public static void main(String args[]) {
+    int joao = 19;
+    int matheus = 22;
+    int nathan = 24;
+
+    int soma = joao + matheus + nathan;
+
+    System.out.println("Soma das idades é = " + soma);
+  }
+}
