@@ -1,0 +1,130 @@
+Operação ternária
+
+
+import java.util.*;
+
+public class MyClass {
+  public static void main(String args[]) {      
+    Scanner xaxa = new Scanner(System.in);  
+      
+    System.out.println("Digite a idade: ");
+    int idade = xaxa.nextInt();
+    
+    boolean ehMaior = (idade >= 18);
+    String mensagem = ehMaior
+        ? "Maior de idade!"
+        : "Menor de idade!";
+        
+    System.out.println(mensagem);
+    
+  }
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exercício:
+
+
+import java.util.*;
+
+public class MyClass {
+  public static void main(String args[]) {
+      
+    Scanner xaxa = new Scanner(System.in);  
+      
+    System.out.println("Digite o primeiro valor: ");
+    int v1 = xaxa.nextInt();
+    
+    System.out.println("Digite o segundo valor: ");
+    int v2 = xaxa.nextInt();
+    
+    
+    boolean ehMaior = (v1 > v2);
+    boolean igual = (v1 == v2);
+    
+    
+    String mensagem = ehMaior
+        ? "Primeiro valor é maior!"
+        : igual 
+            ? "Os dois valores são iguais"
+            : "Segundo valor é maior!";
+        
+    System.out.println(mensagem);
+    
+  }
+  
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+import java.util.*;
+
+public class MyClass {
+  public static void main(String args[]) {
+      
+    Scanner xaxa = new Scanner(System.in);  
+      
+    System.out.println("Digite o primeiro valor: ");
+    int v1 = xaxa.nextInt();
+    
+    System.out.println("Digite o segundo valor: ");
+    int v2 = xaxa.nextInt();
+    
+    
+    boolean ehMaior = (v1 > v2);
+    boolean igual = (v1 == v2);
+    
+    
+    // String mensagem = ehMaior
+    //     ? "%d é maior!", v1;
+    //     : igual 
+    //         ? "Os dois valores são iguais"
+    //         : "%d é maior!", v2;
+        
+    // System.out.printf(mensagem);
+    
+    if(ehMaior) {
+        System.out.printf("%d é maior", v1);
+    } else {
+        if (igual) {
+            System.out.printf("Os dois valores são iguais");
+        } else {
+            System.out.printf("%d é maior", v2);
+        }
+    }
+    
+  }
+  
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exercicio 2
+
+
+import java.util.*;
+
+public class MyClass {
+  public static void main(String args[]) {
+      
+    Scanner xaxa = new Scanner(System.in);  
+    int minhaSenha =  1234;
+      
+    System.out.println("Digite a senha: ");
+    int senha = xaxa.nextInt();
+
+    System.out.println((senha == minhaSenha)
+        ? "ACESSO PERMITIDO"
+        : "ACESSO NEGADO");
+
+  }
+  
+}
