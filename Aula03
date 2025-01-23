@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      Scanner teclado = new Scanner(System.in);
+      
+      int qtd = teclado.nextInt();
+      float valorTotal = 0;
+      
+      if (qtd >= 12) {
+        valorTotal = (0.25f * qtd);
+      } else {
+        valorTotal = (0.30f * qtd);
+      }
+      
+      System.out.println("As maçãs custaram R$" + valorTotal);
+  }
+}
