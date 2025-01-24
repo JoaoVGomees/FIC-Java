@@ -41,3 +41,71 @@ public class MyClass {
 	
 	}
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class MyClass {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int nrDiaDaSemana = 3;
+		
+		if (nrDiaDaSemana == 1) { 
+		  System.out.println("Domingo");
+		} else {
+  		if (nrDiaDaSemana == 2) { 
+  		  System.out.println("Segunda");
+  		} else {
+    		if (nrDiaDaSemana == 3) { 
+    		  System.out.println("Terça");
+    		} else {
+          if (nrDiaDaSemana == 4) { 
+            System.out.println("Quarta");
+          } else {
+        		if (nrDiaDaSemana == 5) { 
+        		  System.out.println("Quinta");
+        		} else {
+          		if (nrDiaDaSemana == 6) { 
+          		  System.out.println("Sexta");
+          		} else {
+                if (nrDiaDaSemana == 7) { 
+                  System.out.println("Sabádo");
+                } else {
+                  System.out.println("Número inválido");
+                }
+          		}
+        		}       
+          }
+    		}
+  		}
+		}
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class MyClass {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int nrLanche = 3;
+		
+		if (nrLanche == 1) { 
+		  System.out.println("Big Mac");
+		} else {
+  		if (nrLanche == 2) { 
+  		  System.out.println("Mc Chicken");
+  		} else {
+    		if (nrLanche == 3) { 
+    		  System.out.println("Tasty");
+    		} else {
+    		  System.out.println("Lanche não existe");
+    		}
+  		}
+		}
+	}
+}
