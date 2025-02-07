@@ -3,12 +3,12 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		Lista lista = new Lista();
+		Lista lista = new Lista(50);
 		
 		lista.adicionar("Salamaleiko");
 		lista.adicionar("Pastel de flango");
 
-		Lista animais = new Lista();
+		Lista animais = new Lista(50);
 		animais.adicionar("Unicornio");
 		animais.adicionar("Leão Marinho");
 		animais.adicionar("Pombo");

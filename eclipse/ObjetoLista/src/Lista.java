@@ -1,8 +1,12 @@
 
 public class Lista {
 
-	String[] vetor = new String[5];
+	String[] vetor;
 	int posicaoVaga = 0;
+	
+	public Lista(int qtdInicial) {
+		vetor = new String[qtdInicial];
+	}
 
 	public void adicionar(String valor) {
 		
