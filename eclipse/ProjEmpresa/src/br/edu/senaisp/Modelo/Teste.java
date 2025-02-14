@@ -1,17 +1,26 @@
 package br.edu.senaisp.Modelo;
 
+import br.edu.senaisp.uteis.Ajuda;
+
 public class Teste {
 
 	public static void main(String[] args) {
-		
-		Pessoa p1 = new Pessoa("Mario", "123");
-		Cao p2 = new Cao("Bengi", "123");
 
-		if (p1.equals(p2)) {
-			System.out.println("Iguais");
-		} else {
-			System.out.println("Diferentes");
-		}
+		Funcionario fufu = new Funcionario("Zé", "555.444.999-10", 2000);
+		Funcionario fafa = new Funcionario("Jennifer", "244545456", 500);
+		
+		Ajuda.validaCPF(fufu.getCpf());
+		
+		System.err.println(fafa.ativo);
+		
+//		Pessoa p1 = new Pessoa("Mario", "123");
+//		Cao p2 = new Cao("Bengi", "123");
+//
+//		if (p1.equals(p2)) {
+//			System.out.println("Iguais");
+//		} else {
+//			System.out.println("Diferentes");
+//		}
 
 //		ArrayList<Pessoa> lista = 
 //				new ArrayList<>();
