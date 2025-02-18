@@ -19,4 +19,25 @@ public class Aluno extends Pessoa {
 		this.nrMatricula = nrMatricula;
 	}
 	
+	@Override
+	public String toString() {
+		return nrMatricula + " | " + getNome() + " (" + getCpf() + ")";
+		
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+
+		if (obj == null) {
+			return false;
+		}
+		
+		if (!(obj instanceof Aluno)) {
+			return false;
+		}
+		
+		Aluno tmp = (Aluno) obj;
+		return (this.nrMatricula.equals(tmp.nrMatricula));
+	}
+	
 }
