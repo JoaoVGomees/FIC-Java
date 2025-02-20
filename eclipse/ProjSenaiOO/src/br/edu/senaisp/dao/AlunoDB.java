@@ -9,7 +9,7 @@ import br.edu.senaisp.modelo.Aluno;
 public class AlunoDB {
 
 	private static List<Aluno> listaDB = new ArrayList<>();
-	
+
 	public void insert (Aluno a) {
 		Random geradorNumero = new Random();
 		a.setNrMatricula(geradorNumero.nextInt());
