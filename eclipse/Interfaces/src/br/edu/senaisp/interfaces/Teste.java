@@ -5,10 +5,14 @@ public class Teste {
 	public static void main(String[] args) {
 
 		Quadrado q = new Quadrado(7);
-		System.out.println(q.calcArea());
+		impressora(q);
 		
 		Circulo c = new Circulo(10);
-		System.out.println(c.calcArea());
+		impressora(c);
 	}
 
+	public static void impressora(IFiguraGeo i) {
+		System.out.println(i.calcArea());
+	}
+	
 }
