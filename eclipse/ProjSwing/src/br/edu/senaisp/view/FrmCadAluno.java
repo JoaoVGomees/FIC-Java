@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import br.edu.senaisp.dao.AlunoDAO;
@@ -51,7 +52,29 @@ public class FrmCadAluno extends JFrame{
 		JButton btnGravar = new JButton("Gravar");
 		pnl1.add(btnGravar);
 		
+		JButton btnListar = new JButton("Listar");
+		pnl1.add(btnListar);
+		
+		JTextArea txtLista = new JTextArea(10, 30);
+		pnl1.add(txtLista);
+		
 		setVisible(true);
+		
+		btnListar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				AlunoDAO dao = new AlunoDAO();
+				txtLista.setText("");
+				
+				for (Aluno aluno : dao.selectAll()) {
+					txtLista.append( aluno.getNome() + "\n");
+				}
+				
+			}
+		});
+		
+		
 		
 		btnGravar.addActionListener(new ActionListener() {
 
@@ -75,8 +98,7 @@ public class FrmCadAluno extends JFrame{
 		});
 		
 		
-//		JTextArea txtArea = new JTextArea(aluno.getNome() + " | " + aluno.getCpf());
-//		pnl1.add(txtArea);
+		
 	}
 	
 	
