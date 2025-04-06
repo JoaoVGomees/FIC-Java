@@ -1,36 +1,28 @@
-package br.edu.senaisp.modelo;
+package br.edu.senaisp.model;
 
-public abstract class Pessoa {
+public class Aluno {
 
 	private String nome;
 	private String cpf;
-	protected int anoNascimento;
 	
-	public Pessoa () {}
-	
-	public Pessoa(String nome, String cpf, int anoNascimento) {
+	public Aluno(String nome, String cpf) {
 		this.nome = nome;
 		this.cpf = cpf;
-		this.anoNascimento = anoNascimento;
 	}
 	
-	public abstract int calIdade();
-
 	public String getNome() {
 		return nome;
 	}
-
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 	public String getCpf() {
 		return cpf;
 	}
-
+	
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
-	
 }
